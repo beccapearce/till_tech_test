@@ -3,7 +3,7 @@
 ```
 As a worker
 So that I can know the cost of an item
-I want to be able to input and item and retrieve a cost
+I want to be able to input an item and retrieve a cost
 ```
 
 ```
