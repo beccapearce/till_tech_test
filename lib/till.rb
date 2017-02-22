@@ -4,4 +4,7 @@ class Till
     @basket = []
   end
 
+  def add_to_basket(item)
+    @basket << item
+  end
 end
