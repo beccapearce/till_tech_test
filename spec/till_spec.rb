@@ -7,6 +7,7 @@ describe Till do
     describe '#initialize' do
       it 'is created with an empty basket' do
       expect(till.basket).to eq([])
+
     end
   end
 
@@ -16,4 +17,13 @@ describe Till do
       expect {till.add_to_basket(item) }.to change {till.basket.length}.by(1)
     end
   end
+
+  describe '#find_price' do
+    it 'looks up an item in the price list' do
+      item = double(:item => 4.75)
+      expect(till.find_price(item)).to eq(4.75)
+
+    end
+  end
+
 end
